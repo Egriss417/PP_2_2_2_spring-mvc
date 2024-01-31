@@ -25,10 +25,6 @@ public class WebConfig implements WebMvcConfigurer {
         this.applicationContext = applicationContext;
     }
 
-    @Bean
-    public static CarServiceImpl getCarService() {
-        return new CarServiceImpl();
-    }
 
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
